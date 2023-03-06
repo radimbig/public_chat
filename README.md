@@ -12,4 +12,4 @@ To run this project, follow these instructions:
 5. Run the command 'dotnet run' to start the backend server.
 ### `dotnet run`
 6. Open your browser and go to 'http://localhost:[port]/' to see the chat application in action.
-###`http://localhost:[port]/`
+### `http://localhost:[port]/`
