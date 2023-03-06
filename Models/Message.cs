@@ -4,7 +4,7 @@
     {
         public int id;
         public int from;
-        public string message = string.Empty;
+        public string message = null!;
 
         public Message(int id, int from, string message)
         {

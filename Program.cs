@@ -16,7 +16,7 @@ namespace Online_Chat
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-
+            builder.Services.AddSingleton<Database>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -31,16 +31,7 @@ namespace Online_Chat
 
             app.MapControllers();
             // "Database"
-            DB db = new();
-
-
-            app.MapPost("/register", ([FromBody] string name, string password) => { 
             
-            });
-            app.MapPost("/send", () =>
-            {
-
-            });
             app.Run();
         }
     }

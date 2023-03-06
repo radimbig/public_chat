@@ -1,8 +1,10 @@
-﻿namespace Online_Chat.Models
+﻿using System.Text.Json;
+
+namespace Online_Chat.Models
 {
-    public class DB
+    public class Database
     {
-        public List<Message> Messages = new();
-        public List<User> Users = new();
+        public List<Message> Messages = new List<Message>();
+        public List<User> Users = new List<User>();
     }
 }
